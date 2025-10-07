@@ -1,0 +1,92 @@
+/* Базовая сетка страницы */
+html { scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #eaf2ff 0%, transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, #fff3e6 0%, transparent 60%),
+    #f7f8fb;
+  color: #222;
+  font: 16px/1.5 system-ui, Arial, sans-serif;
+}
+
+/* Заголовок и описание */
+h2.h4 {
+  margin-top: 32px;
+  margin-bottom: 8px !important;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+}
+
+.login_description {
+  text-align: center;
+  color: #6b7280;
+  max-width: 720px;
+  margin: 0 auto 12px;
+}
+
+/* Отступы контейнера формы */
+#login_form.container {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+/* Карточка логина */
+.card {
+  border: 1px solid #eef2f7;
+  border-radius: 14px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.05),
+    0 2px 8px rgba(0,0,0,0.03);
+}
+
+.card-body { padding: 20px 18px; }
+
+/* Подписи и поля */
+.form-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-control {
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+}
+
+/* Ошибки */
+.is-invalid {
+  border-color: #dc3545 !important;
+  box-shadow: none;
+}
+.invalid-feedback {
+  font-size: 0.9rem;
+  color: #b4232c;
+  margin-top: 6px;
+}
+
+/* Кнопка */
+.btn-primary {
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  background: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
